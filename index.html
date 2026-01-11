@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Крестики-нолики</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="game">
+  <h1>Крестики-нолики</h1>
+
+  <div class="mode">
+    <button onclick="setMode('pvp')">👥 2 игрока</button>
+    <button onclick="setMode('ai')">🤖 Компьютер</button>
+  </div>
+
+  <div id="status">Выберите режим</div>
+
+  <div class="board" id="board"></div>
+
+  <button class="restart" onclick="resetGame()">🔄 Новая игра</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
